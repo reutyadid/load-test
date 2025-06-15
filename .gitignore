@@ -1,0 +1,75 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code, PyCharm, and other IDE config files
+.vscode/
+.idea/
+
+# Test and coverage results
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Pytest cache
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Type checker
+.pytype/
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+build/
+dist/
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+junit-*.xml
+
+# Logs
+*.log
+
+# Local config files
+*.env
+.env.*
+
+# Django stuff:
+*.sqlite3
+db.sqlite3
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db

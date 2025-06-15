@@ -1,0 +1,6 @@
+locust
+kafka-python
+PyYAML
+pika
+gevent
+# Add: docker, kubernetes, fastapi, uvicorn, etc. as needed

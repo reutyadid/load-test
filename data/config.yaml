@@ -1,0 +1,28 @@
+runner_type: openshift
+test_type: http
+config:
+  users: 50
+  spawn_rate: 10
+  duration: "2m"
+  target_url: "https://myapi.example.com"
+  k8s_namespace: loadtests
+  job_name: "http-loadtest-{{uuid}}"
+  image_pull_secret: myregistry-credentials
+  shape:
+    type: step-load
+    steps:
+      - users: 10
+        duration: 30
+      - users: 20
+        duration: 30
+      - users: 50
+        duration: 60
+  data_schema:
+    type: array
+    minItems: 2
+    items:
+      type: object
+      properties:
+        id: {type: integer}
+        payload: {type: string}
+      required: [id, payload]
